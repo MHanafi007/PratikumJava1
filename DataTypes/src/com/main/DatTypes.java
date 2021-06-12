@@ -2,17 +2,40 @@ package com.main;
 
 import javax.swing.*;
 import java.nio.file.FileSystemNotFoundException;
+import java.util.Scanner;
 
 public class DatTypes {
     public static void main(String [] args){
-        String namaDepan = "Mochammad";
-        String namaTengah = "Hanafi";
-        String namaBelakang = "Sky";
-        int usia = 20;
-        int targetTahunKuliah = 4;
-        double ipk = 3.89;
-        char nilaiAbjad = 'A';
-        boolean tanpan = true;
+
+        Scanner scanner = new Scanner(System.in);
+
+        String namaDepan;
+        String namaTengah;
+        String namaBelakang;
+        int usia;
+        int targetTahunKuliah;
+        double ipk;
+        char nilaiAbjad;
+        boolean tanpan;
+
+        System.out.print("Input Nama Depan : ");
+        namaDepan = scanner.nextLine();
+        System.out.print("Input Nama Tengah : ");
+        namaTengah = scanner.nextLine();
+        System.out.print("Input Nama Belakang : ");
+        namaBelakang = scanner.nextLine();
+        System.out.print("Input Usia : ");
+        usia = scanner.nextInt();
+        System.out.print("Input Target Kuliah : ");
+        targetTahunKuliah = scanner.nextInt();
+        System.out.print("Input IPK : ");
+        ipk = scanner.nextDouble();
+        System.out.print("Input Nama PBO : ");
+        nilaiAbjad = scanner.next().charAt(0);
+        System.out.print("Tampan? : ");
+        tanpan = scanner.nextBoolean();
+
+
 
 
         System.out.println("Nama depan : " + namaDepan);
